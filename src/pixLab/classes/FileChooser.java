@@ -119,7 +119,7 @@ public class FileChooser
 			//Removed this line for Java 7 Compilation
 			// Class currClass = Class.forName("FileChooser");
 			URL classURL = FileChooser.class.getResource("FileChooser.class");
-			URL fileURL = new URL(classURL, "../images/");
+			URL fileURL = new URL("r://csad2045/images/");
 			directory = fileURL.getPath();
 			directory = URLDecoder.decode(directory, "UTF-8");
 			dirFile = new File(directory);
